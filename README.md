@@ -162,6 +162,38 @@ npm run eject      # Eject (no recomendado)
 - [ ] Reportes y analytics
 - [ ] Tests automatizados
 
+## 📝 Prompt Original y Evolución
+
+### Requerimientos Iniciales
+**Prompt original:**
+> Arma la solución para una app de otorgamiento de crédito, que reciba los parámetros de nombre apellido dni teléfono, email y banco. Dentro del desplegable listado de bancos tenemos: Banco BBVA, Banco Santander, Banco Galicia, Banco Nación, Banco Macro, Banco Comafi, Banco ICBC. De los bancos que tenemos habilitados: Banco BBVA, Banco Santander, Banco Galicia, Banco Nación. Los demás son rechazo directo, se dará una oferta de hasta 300000 $ ARS. El cliente podrá elegir un monto menor y la cantidad de cuotas: 3,6, 9 o 12. Armemos que cuanto más extenso el periodo, más alta la tasa de interés en las cuotas. Cuando se muestre la aprobación, se le mostrará un cartel "Su oferta fue aprobada" y el nombre. Deberá aceptar un check con los términos y condiciones, y para avanzar la oferta se le solicitará el CBU de 22 dígitos. Para identificar si el CBU se corresponde con los datos se necesita checkear que los 3 primeros dígitos sean los del código del banco. Una vez aceptada la oferta se avanza al siguiente paso de validación de documento, el cliente carga la foto de un documento, y con AWS Rekognition validar si es un documento. Si no es un documento devolver un error para que pueda reintentar. Una vez validado avanzar y mostrar mensaje de que la transacción del crédito fue aprobado y transferido. Ver si se puede mandar con SNS una notificación al cliente de que se le transfirió el crédito.
+
+### Cambios y Mejoras Implementadas
+
+#### 🎨 **Mejoras de UI/UX Solicitadas**
+- **PrimeReact**: Implementación completa de biblioteca de componentes profesionales
+- **Drag & Drop**: Carga de documentos con área de arrastre visual
+- **Recomendaciones de foto**: Guías para buena iluminación, enfoque, superficie plana
+- **Pantalla de rechazo**: Reemplazo de alert por pantalla completa con imagen de cliente triste
+
+#### 🏗️ **Arquitectura y Navegación**
+- **Header**: Logo CréditoFácil, navegación (Cliente, Blog, Contacto), botón CTA
+- **Footer**: QR AFIP, derechos, links a productos financieros, redes sociales
+- **Páginas adicionales**: Blog financiero, formulario de contacto
+- **Indicador de progreso**: Pasos visuales del proceso de crédito
+
+#### 🔧 **Funcionalidades Técnicas**
+- **Simulación AWS**: Funciona sin credenciales reales para desarrollo
+- **Validación CBU**: Verificación de 22 dígitos + código de banco
+- **Responsive design**: Adaptable a móviles y tablets
+- **Manejo de errores**: Pantallas específicas para cada tipo de rechazo
+
+#### 📋 **Cumplimiento y Legal**
+- **QR AFIP**: Código QR simulado para cumplimiento fiscal
+- **Regulación BCRA**: Mención en footer
+- **Términos y condiciones**: Checkbox obligatorio
+- **Información de contacto**: Datos empresariales completos
+
 ## 📞 Soporte
 
 Para consultas técnicas o comerciales:
