@@ -164,6 +164,9 @@ npm run eject      # Eject (no recomendado)
 
 ## 📝 Prompt Original y Evolución
 
+<img width="1423" height="852" alt="image" src="https://github.com/user-attachments/assets/2b7d2062-29b3-43ae-b0ea-3afa17a712d4" />
+
+
 ### Requerimientos Iniciales
 **Prompt original:**
 > Arma la solución para una app de otorgamiento de crédito, que reciba los parámetros de nombre apellido dni teléfono, email y banco. Dentro del desplegable listado de bancos tenemos: Banco BBVA, Banco Santander, Banco Galicia, Banco Nación, Banco Macro, Banco Comafi, Banco ICBC. De los bancos que tenemos habilitados: Banco BBVA, Banco Santander, Banco Galicia, Banco Nación. Los demás son rechazo directo, se dará una oferta de hasta 300000 $ ARS. El cliente podrá elegir un monto menor y la cantidad de cuotas: 3,6, 9 o 12. Armemos que cuanto más extenso el periodo, más alta la tasa de interés en las cuotas. Cuando se muestre la aprobación, se le mostrará un cartel "Su oferta fue aprobada" y el nombre. Deberá aceptar un check con los términos y condiciones, y para avanzar la oferta se le solicitará el CBU de 22 dígitos. Para identificar si el CBU se corresponde con los datos se necesita checkear que los 3 primeros dígitos sean los del código del banco. Una vez aceptada la oferta se avanza al siguiente paso de validación de documento, el cliente carga la foto de un documento, y con AWS Rekognition validar si es un documento. Si no es un documento devolver un error para que pueda reintentar. Una vez validado avanzar y mostrar mensaje de que la transacción del crédito fue aprobado y transferido. Ver si se puede mandar con SNS una notificación al cliente de que se le transfirió el crédito.
